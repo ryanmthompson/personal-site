@@ -1,0 +1,40 @@
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.homeSidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 1px;
+}
+
+.homeSidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.homeSidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+#homeMain {
+    transition: margin-left .5s;
+    padding: 1px;
+}
+
+@media screen and (max-height: 450px) {
+  .homeSidenav {padding-top: 1px;}
+  .homeSidenav a {font-size: 18px;}
+}

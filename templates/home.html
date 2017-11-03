@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body style="margin: 0; padding: 0;">
+
+<div id="content">
+    <div id="myHomeSidenav" class="homeSidenav">
+        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+        <a href="/home">Home</a>
+        <a href="/map">Map</a>
+    </div>
+    <div id="homeMain">
+        <div class="topnav">
+            <!--<span class="active" style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#8660;</span>-->
+            <a href="#" class="active" onclick="toggleNav()">&#8660;</a>
+            <a href="/home">Home</a>
+            <a href="/map">Map</a>
+            <a href="/trombone">Pink Trombone</a>
+            <a href="/logout">Logout</a>
+        </div>
+        <div>
+            <h3>HOME!</h3>
+            <!--<input type="submit" value="Map" onclick="window.location='/map';" />-->
+        </div>
+    </div>
+</div>
+</body>
+<link rel="stylesheet" type="text/css" href="/static/css/menubar.css">
+<link rel="stylesheet" type="text/css" href="/static/css/homeSidebar.css">
+<script src="/static/js/homeSidebar.js"></script>
+<script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pink Trombone</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+<div>
+    <div id="myLeftSidenav" class="left-sidenav">
+        <a href="javascript:void(0)">Left Controls</a>
+        <a href="/">Home</a>
+        <a href="/map">Map</a>
+    </div>
+    <div id="myRightSidenav" class="right-sidenav">
+        <a href="javascript:void(0)">Right Controls</a>
+        <a href="/">Home</a>
+        <a href="/map">Map</a>
+    </div>
+    <div id="main">
+        <div class="topnav">
+            <a href="javascript:void(0)" class="active" onclick="sideNav.toggleNav('left')">&#8660;</a>
+            <a href="/home">Home</a>
+            <a href="/map">Map</a>
+            <a href="/trombone">Pink Trombone</a>
+            <a href="javascript:void(0)" style="float:right"class="active" onclick="sideNav.toggleNav('right')">&#8660;</a>
+        </div>
+        <div>
+            <canvas id="tractCanvas" width="600" height="600">
+            </canvas>
+            <canvas id="backCanvas" width="600" height="600">
+            </canvas>
+        </div>
+
+        <div>
+        </div>
+    </div>
+</div>
+</body>
+<link rel="stylesheet" type="text/css" href="/static/css/menubar.css">
+<link rel="stylesheet" type="text/css" href="/static/css/cesiumSidebar.css">
+<link rel="stylesheet" type="text/css" href="/static/css/trombone.css">
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="/static/js/trombone.js"></script>
+<script src="/static/js/cesiumSidebar.js"></script>
+</html>

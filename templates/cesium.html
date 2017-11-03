@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body style="margin: 0; padding: 0;">
+<div>
+    <div id="myLeftSidenav" class="left-sidenav">
+        <a href="javascript:void(0)">Left Controls</a>
+        <form id="settings">
+            <input type="checkbox" id="isLightingSelected">
+            <lable>Toggle Lighting</lable><br>
+            <input type="checkbox" id="isTerrainProviderSelected">
+            <lable>Toggle Terrain Provider</lable><br>
+            <ul>
+                <li>
+                    <input type="checkbox" id="isWaterMaskSelected">
+                    <lable>Toggle Water Mask</lable><br>
+                </li>
+            </ul>
+            <lable>Terrain Exaggeration</lable>
+            <input type="range" name="points" id="points" value="1" min="0" max="100" data-show-value="true"><br><br>
+        </form>
+        <br><br>
+        <a href="javascript:void(0)">Coordinates</a>
+        <div id="coordinates">
+            <p id="lat"></p>
+            <p id="lon"></p>
+        </div>
+    </div>
+    <div id="myRightSidenav" class="right-sidenav">
+        <a href="javascript:void(0)">Right Controls</a>
+        <a href="/">Home</a>
+        <a href="/map">Map</a>
+    </div>
+    <div id="main">
+        <div class="topnav">
+            <a href="javascript:void(0)" class="active" onclick="sideNav.toggleNav('left')">&#8660;</a>
+            <a href="/home">Home</a>
+            <a href="/map">Map</a>
+            <a href="/trombone">Pink Trombone</a>
+            <a href="javascript:void(0)" style="float:right"class="active" onclick="sideNav.toggleNav('right')">&#8660;</a>
+        </div>
+        <div id="cesiumContainer">
+        </div>
+    </div>
+</div>
+</body>
+<link rel="stylesheet" type="text/css" href="/static/css/menubar.css">
+<link rel="stylesheet" type="text/css" href="/static/css/cesiumSidebar.css">
+<link rel="stylesheet" type="text/css" href="/static/css/range.css">
+<link rel="stylesheet" type="text/css" href="/node_modules/cesium/Build/CesiumUnminified/Widgets/widgets.css">
+<script src="/node_modules/cesium/Build/CesiumUnminified/Cesium.js"></script>
+<script src="/node_modules//jquery/dist/jquery.js"></script>
+<script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="/static/js/cesiumInit.js"></script>
+<script src="/static/js/cesiumSidebar.js"></script>
+</html>
