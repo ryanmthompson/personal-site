@@ -135,6 +135,7 @@ def trombone():
 
 if __name__ == '__main__':
     # Start app
+    #app.run(host='0.0.0.0', port=5066, debug=True)
     app.run(debug=True)
 
 
