@@ -1,0 +1,52 @@
+{
+  "Squire": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Knight": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "apprentice": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "wizard": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "engineer": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  }
+}

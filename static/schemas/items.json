@@ -1,10 +1,14 @@
 {
   "Potion": {
     "statistic": "current_hp",
-    "modifier": 50
+    "modifier": 50,
+    "purchase_price": 20,
+    "sale_price": 15
   },
   "Hi Potion": {
     "statistic": "current_hp",
-    "modifier": 500
+    "modifier": 500,
+    "purchase_price": 200,
+    "sale_price": 150
   }
 }

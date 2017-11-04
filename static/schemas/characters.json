@@ -1,14 +1,17 @@
 {
-  "Tom": {
+  "character": {
     "level": 1,
+    "experience": 0,
+    "next_level": 100,
     "class": {
       "Squire": true,
       "Knight": false,
       "apprentice": false,
-      "wizard": false
+      "wizard": false,
+      "engineer": false
     },
     "class_level": 1,
-    "experience": 0,
+    "class_skills": {},
     "max_hp": 300,
     "current_hp": 300,
     "max_mp": 20,
@@ -29,31 +32,72 @@
     "status":{
       "poison": false,
       "blind": false,
-      "slow": false
+      "slow": false,
+      "sleep": false
     },
     "weak":{
+      "physical": false,
+      "slashing": false,
+      "piercing": false,
+      "chopping": false,
+      "blunt": false,
+      "thrown": false,
+      "unarmed": false,
+      "magic": false,
       "fire": false,
       "ice" : false,
       "lightning": false,
-      "earth": false
+      "earth": false,
+      "light": false,
+      "dark": false
     },
     "strong":{
+      "physical": false,
+      "slashing": false,
+      "piercing": false,
+      "chopping": false,
+      "blunt": false,
+      "thrown": false,
+      "unarmed": false,
+      "magic": false,
       "fire": false,
       "ice" : false,
       "lightning": false,
-      "earth": false
+      "earth": false,
+      "light": false,
+      "dark": false
     },
     "immune":{
+      "physical": false,
+      "slashing": false,
+      "piercing": false,
+      "chopping": false,
+      "blunt": false,
+      "thrown": false,
+      "unarmed": false,
+      "magic": false,
       "fire": false,
       "ice" : false,
       "lightning": false,
-      "earth": false
+      "earth": false,
+      "light": false,
+      "dark": false
     },
     "absorb":{
+      "physical": false,
+      "slashing": false,
+      "piercing": false,
+      "chopping": false,
+      "blunt": false,
+      "thrown": false,
+      "unarmed": false,
+      "magic": false,
       "fire": false,
       "ice" : false,
       "lightning": false,
-      "earth": false
+      "earth": false,
+      "light": false,
+      "dark": false
     }
   }
 }
