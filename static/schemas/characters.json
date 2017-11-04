@@ -1,0 +1,59 @@
+{
+  "Tom": {
+    "level": 1,
+    "class": {
+      "Squire": true,
+      "Knight": false,
+      "apprentice": false,
+      "wizard": false
+    },
+    "class_level": 1,
+    "experience": 0,
+    "max_hp": 300,
+    "current_hp": 300,
+    "max_mp": 20,
+    "current_mp":20,
+    "strength": 1,
+    "speed": 1,
+    "agility": 1,
+    "spirit": 1,
+    "intelligence":1,
+    "right_hand":{},
+    "left_hand":{},
+    "arms": {},
+    "head": {},
+    "torso": {},
+    "legs": {},
+    "accessory_1": {},
+    "accessory_2": {},
+    "status":{
+      "poison": false,
+      "blind": false,
+      "slow": false
+    },
+    "weak":{
+      "fire": false,
+      "ice" : false,
+      "lightning": false,
+      "earth": false
+    },
+    "strong":{
+      "fire": false,
+      "ice" : false,
+      "lightning": false,
+      "earth": false
+    },
+    "immune":{
+      "fire": false,
+      "ice" : false,
+      "lightning": false,
+      "earth": false
+    },
+    "absorb":{
+      "fire": false,
+      "ice" : false,
+      "lightning": false,
+      "earth": false
+    },
+  }
+}

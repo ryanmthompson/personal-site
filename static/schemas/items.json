@@ -1,0 +1,10 @@
+{
+  "Potion": {
+    "statistic": "current_hp",
+    "modifier": 50
+  },
+  "Hi Potion": {
+    "statistic": "current_hp",
+    "modifier": 500
+  }
+}
