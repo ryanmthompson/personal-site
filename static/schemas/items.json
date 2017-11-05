@@ -10,5 +10,11 @@
     "modifier": 500,
     "purchase_price": 200,
     "sale_price": 150
+  },
+  "X Potion": {
+    "statistic": "current_hp",
+    "modifier": 1000,
+    "purchase_price": 400,
+    "sale_price": 300
   }
 }
