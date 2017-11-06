@@ -4,6 +4,10 @@ body {
     background-color: #222;
 }
 
+.content{
+    margin: 0 auto;
+}
+
 .content a {
     float: left;
     display: block;
