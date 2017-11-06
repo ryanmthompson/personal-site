@@ -133,6 +133,13 @@ def trombone():
 
     return redirect(url_for('index'))
 
+@app.route('/game')
+def game():
+    if g.user:
+        return render_template('game.html')
+
+    return redirect(url_for('index'))
+
 if __name__ == '__main__':
     # Start app
     #app.run(host='0.0.0.0', port=5066, debug=True)
