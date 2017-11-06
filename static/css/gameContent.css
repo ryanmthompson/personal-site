@@ -4,7 +4,7 @@ body {
     background-color: #222;
 }
 
-.content script{
+.content p{
     display: block;
     margin: 0 auto;
 }
