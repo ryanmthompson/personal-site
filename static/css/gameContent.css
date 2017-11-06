@@ -4,9 +4,8 @@ body {
     background-color: #222;
 }
 
-.content{
-    margin: auto;
-    width: 66%;
+.content canvas{
+    margin: 0 auto;
 }
 
 .content a {

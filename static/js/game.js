@@ -1,10 +1,8 @@
 var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'content', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
-
     game.load.image('ship', '/static/assets/sprites/thrust_ship.png');
     game.load.spritesheet('bullet', '/static/assets/sprites/rgblaser.png', 4, 4);
-
 }
 
 var sprite;
@@ -13,8 +11,7 @@ var cursors;
 var fireButton;
 
 function create() {
-
-    //  Creates 30 bullets, using the 'bullet' graphic
+    //  Creates 40 bullets, using the 'bullet' graphic
     weapon = game.add.weapon(40, 'bullet');
 
     //  The 'rgblaser.png' is a Sprite Sheet with 80 frames in it (each 4x4 px in size)
@@ -32,14 +29,11 @@ function create() {
     weapon.fireRate = 50;
 
     //  Wrap bullets around the world bounds to the opposite side
-    // weapon.bulletWorldWrap = true;
+    weapon.bulletWorldWrap = true;
 
     sprite = this.add.sprite(400, 300, 'ship');
-
     sprite.anchor.set(0.5);
-
     game.physics.arcade.enable(sprite);
-
     sprite.body.drag.set(70);
     sprite.body.maxVelocity.set(200);
 
@@ -49,46 +43,52 @@ function create() {
     weapon.trackSprite(sprite, 0, 0, true);
 
     cursors = this.input.keyboard.createCursorKeys();
-
     fireButton = this.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);
 
+    // Stretch to fill
+    game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+
+    // Keep original size
+    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.NO_SCALE;
+
+    // Maintain aspect ratio
+    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+
+    game.input.onDown.add(gofull, this);
+
+    game.stage.backgroundColor = "#000000";
 }
 
 function update() {
-
-    if (cursors.up.isDown)
-    {
+    if (cursors.up.isDown){
         game.physics.arcade.accelerationFromRotation(sprite.rotation, 300, sprite.body.acceleration);
-    }
-    else
-    {
+    }else{
         sprite.body.acceleration.set(0);
     }
 
-    if (cursors.left.isDown)
-    {
+    if (cursors.left.isDown){
         sprite.body.angularVelocity = -300;
-    }
-    else if (cursors.right.isDown)
-    {
+    }else if (cursors.right.isDown){
         sprite.body.angularVelocity = 300;
-    }
-    else
-    {
+    }else{
         sprite.body.angularVelocity = 0;
     }
 
-    if (fireButton.isDown)
-    {
+    if (fireButton.isDown){
         weapon.fire();
     }
 
     game.world.wrap(sprite, 16);
-
 }
 
 function render() {
-
     weapon.debug();
+}
 
+function gofull() {
+    if (game.scale.isFullScreen){
+        game.scale.stopFullScreen();
+    }else{
+        game.scale.startFullScreen(false);
+    }
 }
