@@ -4,10 +4,9 @@ body {
     background-color: #222;
 }
 
-.content p{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
+.content{
+    margin: auto;
+    width: 66%;
 }
 
 .content a {
