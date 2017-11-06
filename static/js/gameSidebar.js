@@ -25,7 +25,7 @@ function SideNav() {
     this.closeLeftNav = function() {
         document.getElementById("myLeftSidenav").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
-        document.body.style.backgroundColor = "white";
+        //document.body.style.backgroundColor = "white";
     };
     this.openRightNav = function() {
         document.getElementById("myRightSidenav").style.width = "250px";
@@ -34,7 +34,7 @@ function SideNav() {
     this.closeRightNav = function() {
         document.getElementById("myRightSidenav").style.width = "0";
         document.getElementById("main").style.marginRight= "0";
-        document.body.style.backgroundColor = "white";
+        //document.body.style.backgroundColor = "white";
     };
 }
 var sideNav = new SideNav();
