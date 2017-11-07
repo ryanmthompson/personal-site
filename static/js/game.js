@@ -2,51 +2,27 @@ var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'content', { preload: preloa
 
 function preload() {
     game.load.image('backdrop', '/static/assets/pics/remember-me.jpg');
-    game.load.image('ship', '/static/assets/sprites/thrust_ship.png');
-    game.load.spritesheet('bullet', '/static/assets/sprites/rgblaser.png', 4, 4);
+    game.load.spritesheet('kain', '/static/assets/sprites/kain.png', 16, 24, 43);
 }
 
-var ship;
-var weapon;
+var kain;
 var cursors;
-var fireButton;
 
 function create() {
     game.world.setBounds(0, 0, 1920, 1200);
     game.add.sprite(0, 0, 'backdrop');
 
-    //  Creates 40 bullets, using the 'bullet' graphic
-    weapon = game.add.weapon(40, 'bullet');
+    kain = game.add.sprite(300, 200, 'kain', 1);
+    kain.anchor.setTo(.5,.5);
+    kain.scale.x = 2;
+    kain.scale.y = 2;
 
-    //  The 'rgblaser.png' is a Sprite Sheet with 80 frames in it (each 4x4 px in size)
-    //  The 3rd argument tells the Weapon Plugin to advance to the next frame each time
-    //  a bullet is fired, when it hits 80 it'll wrap to zero again.
-    //  You can also set this via this.weapon.bulletFrameCycle = true
-    weapon.setBulletFrames(0, 80, true);
+    kain.animations.add('kain_walk_down', [0,2]);
+    kain.animations.add('kain_walk_up', [3,5]);
+    kain.animations.add('kain_walk_left', [6,7,8,7]);
+    kain.animations.add('kain_walk_left', [6,7,8,7]);
 
-    weapon.bulletKillType = Phaser.Weapon.KILL_WORLD_BOUNDS;
-
-    //  The speed at which the bullet is fired
-    weapon.bulletSpeed = 400;
-
-    //  Speed-up the rate of fire, allowing them to shoot 1 bullet every 50ms
-    weapon.fireRate = 50;
-
-    //  Wrap bullets around the world bounds to the opposite side
-    weapon.bulletWorldWrap = true;
-
-    ship = this.add.sprite(400, 300, 'ship');
-    ship.anchor.set(0.5);
-    game.physics.arcade.enable(ship);
-    ship.body.drag.set(70);
-    ship.body.maxVelocity.set(200);
-
-    game.camera.follow(ship);
-
-    //  Tell the Weapon to track the 'player' Sprite
-    //  With no offsets from the position
-    //  But the 'true' argument tells the weapon to track sprite rotation
-    weapon.trackSprite(ship, 0, 0, true);
+    game.camera.follow(kain);
 
     cursors = this.input.keyboard.createCursorKeys();
     fireButton = this.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);
@@ -67,28 +43,36 @@ function create() {
 
 function update() {
     if (cursors.up.isDown){
-        game.physics.arcade.accelerationFromRotation(ship.rotation, 300, ship.body.acceleration);
-    }else{
-        ship.body.acceleration.set(0);
-    }
-
-    if (cursors.left.isDown){
-        ship.body.angularVelocity = -300;
+        kain.animations.play('kain_walk_up', 3, true);
+        kain.y -= 2;
+    }else if (cursors.down.isDown){
+        kain.animations.play('kain_walk_down', 3, true);
+        kain.y += 2;
+    }else if (cursors.left.isDown){
+        kain.scale.x = 2;
+        kain.animations.play('kain_walk_left', 3, true);
+        kain.x -= 2;
     }else if (cursors.right.isDown){
-        ship.body.angularVelocity = 300;
-    }else{
-        ship.body.angularVelocity = 0;
+        kain.scale.x = -2;
+        kain.animations.play('kain_walk_left', 3, true);
+        kain.x += 2;
     }
 
-    if (fireButton.isDown){
-        weapon.fire();
-    }
+/*    if (cursors.up.onUp){
+        kain.animations.stop('kain_walk_up');
+    }else if (cursors.down.onUp){
+        kain.animations.stop('kain_walk_down');
+    }else if (cursors.left.onUp){
+        kain.animations.stop('kain_walk_left');
+    }else if (cursors.right.onUp){
+        kain.animations.stop('kain_walk_left');
+    }*/
 
-    game.world.wrap(ship, 16);
+    game.world.wrap(kain, 16);
 }
 
 function render() {
-    weapon.debug();
+
 }
 
 function gofull() {
