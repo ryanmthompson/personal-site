@@ -16,27 +16,22 @@
     "max_hp": 300,
     "current_hp": 300,
     "max_mp": 20,
-    "current_mp":20,
+    "current_mp": 20,
     "strength": 1,
     "speed": 1,
     "agility": 1,
     "spirit": 1,
-    "intelligence":1,
-    "right_hand":{},
-    "left_hand":{},
+    "intelligence": 1,
+    "right_hand": {},
+    "left_hand": {},
     "arms": {},
     "head": {},
     "torso": {},
     "legs": {},
     "accessory_1": {},
     "accessory_2": {},
-    "status":{
-      "poison": false,
-      "blind": false,
-      "slow": false,
-      "sleep": false
-    },
-    "weak":{
+    "status": {},
+    "weak": {
       "physical": false,
       "slashing": false,
       "piercing": false,
@@ -52,7 +47,7 @@
       "light": false,
       "dark": false
     },
-    "strong":{
+    "strong": {
       "physical": false,
       "slashing": false,
       "piercing": false,
@@ -68,7 +63,7 @@
       "light": false,
       "dark": false
     },
-    "immune":{
+    "immune": {
       "physical": false,
       "slashing": false,
       "piercing": false,
@@ -84,7 +79,7 @@
       "light": false,
       "dark": false
     },
-    "absorb":{
+    "absorb": {
       "physical": false,
       "slashing": false,
       "piercing": false,
