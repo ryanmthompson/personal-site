@@ -1,0 +1,32 @@
+{
+  "white": {
+    "cure_1": {},
+    "cure_2": {},
+    "cure_3": {},
+    "cure_4": {},
+    "antidote": {},
+    "wake": {},
+    "sight": {},
+    "Speak": {}
+  },
+  "black": {
+    "fire_1": {},
+    "fire_2": {},
+    "fire_3": {},
+    "ice_1": {},
+    "ice_2": {},
+    "ice_3": {},
+    "lightning_1": {},
+    "lightning_2": {},
+    "Lightning_3": {},
+    "dark_1": {},
+    "dark_2": {},
+    "dark_3": {}
+  },
+  "green": {
+    "poison": {},
+    "sleep": {},
+    "blind": {},
+    "silence": {}
+  }
+}

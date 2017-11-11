@@ -1,5 +1,6 @@
 {
   "character": {
+    "name": "",
     "level": 1,
     "experience": 0,
     "next_level": 100,
