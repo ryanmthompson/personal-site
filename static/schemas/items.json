@@ -1,20 +1,133 @@
 {
-  "Potion": {
-    "statistic": "current_hp",
+  "Health Potion": {
+    "name": "Health Potion",
+    "description": "Health Potion that restores 50 hit points.",
+    "statistic": ["current_hp"],
     "modifier": 50,
     "purchase_price": 20,
     "sale_price": 15
   },
-  "Hi Potion": {
-    "statistic": "current_hp",
+  "Hi-Health Potion": {
+    "name": "Hi-Health Potion",
+    "description": "Health Potion that restores 500 hit points.",
+    "statistic": ["current_hp"],
     "modifier": 500,
     "purchase_price": 200,
     "sale_price": 150
   },
-  "X Potion": {
-    "statistic": "current_hp",
+  "X-Health Potion": {
+    "name": "X-Health Potion",
+    "description": "Health Potion that restores 1000 hit points.",
+    "statistic": ["current_hp"],
     "modifier": 1000,
     "purchase_price": 400,
     "sale_price": 300
+  },
+  " Ether Potion": {
+    "name": "Ether Potion",
+    "description": "Ether Potion that restores 50 magic points.",
+    "statistic": ["current_mp"],
+    "modifier": 50,
+    "purchase_price": 20,
+    "sale_price": 15
+  },
+  "Hi-Ether Potion": {
+    "name": "Hi-Ether Potion",
+    "description": "Ether Potion that restores 500 magic points.",
+    "statistic": ["current_mp"],
+    "modifier": 500,
+    "purchase_price": 200,
+    "sale_price": 150
+  },
+  "X-Ether Potion": {
+    "name": "X-Ether Potion",
+    "description": "Ether Potion that restores 1000 magic points.",
+    "statistic": ["current_mp"],
+    "modifier": 1000,
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Multi-Potion": {
+    "name": "Health and Ether Potion",
+    "description": "Health Potion that restores 50 hit points.",
+    "statistic": ["current_hp","current_mp"],
+    "modifier": 50,
+    "purchase_price": 20,
+    "sale_price": 15
+  },
+  "Hi-Multi-Potion": {
+    "name": "Hi-Health and Ether Potion",
+    "description": "Health Potion that restores 500 hit points.",
+    "statistic": ["current_hp","current_mp"],
+    "modifier": 500,
+    "purchase_price": 200,
+    "sale_price": 150
+  },
+  "X-Multi-Potion": {
+    "name": "X-Health and Ether Potion",
+    "description": "Health Potion that restores 1000 hit points.",
+    "statistic": ["current_hp","current_mp"],
+    "modifier": 1000,
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Increase Strength Potion": {
+    "name": "Strength Potion",
+    "description": "Strength Potion that increases player strength by 5 points.",
+    "statistic": ["strength"],
+    "modifier": "5",
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Increase Speed Potion": {
+    "name": "Speed Potion",
+    "description": "Speed Potion that increases player strength by 5 points.",
+    "statistic": ["speed"],
+    "modifier": "5",
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Increase Agility Potion": {
+    "name": "Agility Potion",
+    "description": "Agility Potion that increases player strength by 5 points.",
+    "statistic": ["agility"],
+    "modifier": "5",
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Increase Spirit Potion": {
+    "name": "Spirit Potion",
+    "description": "Spirit Potion that increases player strength by 5 points.",
+    "statistic": ["spirit"],
+    "modifier": "5",
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Increase Intelligence Potion": {
+    "name": "Intelligence Potion",
+    "description": "Intelligence Potion that increases player strength by 5 points.",
+    "statistic": ["intelligence"],
+    "modifier": "5",
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Poison Potion": {
+    "name": "Poison Potion - need to add the poison -true status",
+    "description": "Poison Potion that will decrease enemy hit points by 5.",
+    "statistic": ["current_hp"],
+    "modifier": "-5",
+    "purchase_price": 400,
+    "sale_price": 300
+  },
+  "Slow Potion": {
+    "name": "Slow Potion",
+    "description": "Poison Potion that will decrease enemy speed by -5.",
+    "statistic": ["speed"],
+    "modifier": "-5",
+    "purchase_price": 400,
+    "sale_price": 300
   }
+
+
 }
+
