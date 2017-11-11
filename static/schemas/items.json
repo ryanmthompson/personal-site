@@ -1,5 +1,5 @@
 {
-  "Health Potion": {
+  "health-potion": {
     "name": "Health Potion",
     "description": "Health Potion that restores 50 hit points.",
     "statistic": ["current_hp"],
@@ -7,7 +7,7 @@
     "purchase_price": 20,
     "sale_price": 15
   },
-  "Hi-Health Potion": {
+  "hi-health-potion": {
     "name": "Hi-Health Potion",
     "description": "Health Potion that restores 500 hit points.",
     "statistic": ["current_hp"],
@@ -15,7 +15,7 @@
     "purchase_price": 200,
     "sale_price": 150
   },
-  "X-Health Potion": {
+  "x-health-potion": {
     "name": "X-Health Potion",
     "description": "Health Potion that restores 1000 hit points.",
     "statistic": ["current_hp"],
@@ -23,7 +23,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  " Ether Potion": {
+  " ether-potion": {
     "name": "Ether Potion",
     "description": "Ether Potion that restores 50 magic points.",
     "statistic": ["current_mp"],
@@ -31,7 +31,7 @@
     "purchase_price": 20,
     "sale_price": 15
   },
-  "Hi-Ether Potion": {
+  "hi-ether-potion": {
     "name": "Hi-Ether Potion",
     "description": "Ether Potion that restores 500 magic points.",
     "statistic": ["current_mp"],
@@ -39,7 +39,7 @@
     "purchase_price": 200,
     "sale_price": 150
   },
-  "X-Ether Potion": {
+  "x-ether-potion": {
     "name": "X-Ether Potion",
     "description": "Ether Potion that restores 1000 magic points.",
     "statistic": ["current_mp"],
@@ -47,7 +47,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Multi-Potion": {
+  "multi-potion": {
     "name": "Health and Ether Potion",
     "description": "Health Potion that restores 50 hit points.",
     "statistic": ["current_hp","current_mp"],
@@ -55,7 +55,7 @@
     "purchase_price": 20,
     "sale_price": 15
   },
-  "Hi-Multi-Potion": {
+  "hi-multi-potion": {
     "name": "Hi-Health and Ether Potion",
     "description": "Health Potion that restores 500 hit points.",
     "statistic": ["current_hp","current_mp"],
@@ -63,7 +63,7 @@
     "purchase_price": 200,
     "sale_price": 150
   },
-  "X-Multi-Potion": {
+  "x-multi-potion": {
     "name": "X-Health and Ether Potion",
     "description": "Health Potion that restores 1000 hit points.",
     "statistic": ["current_hp","current_mp"],
@@ -71,7 +71,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Increase Strength Potion": {
+  "increase-strength-potion": {
     "name": "Strength Potion",
     "description": "Strength Potion that increases player strength by 5 points.",
     "statistic": ["strength"],
@@ -79,7 +79,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Increase Speed Potion": {
+  "increase-speed-potion": {
     "name": "Speed Potion",
     "description": "Speed Potion that increases player strength by 5 points.",
     "statistic": ["speed"],
@@ -87,7 +87,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Increase Agility Potion": {
+  "increase-agility-potion": {
     "name": "Agility Potion",
     "description": "Agility Potion that increases player strength by 5 points.",
     "statistic": ["agility"],
@@ -95,7 +95,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Increase Spirit Potion": {
+  "increase-spirit-potion": {
     "name": "Spirit Potion",
     "description": "Spirit Potion that increases player strength by 5 points.",
     "statistic": ["spirit"],
@@ -103,7 +103,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Increase Intelligence Potion": {
+  "increase-intelligence-potion": {
     "name": "Intelligence Potion",
     "description": "Intelligence Potion that increases player strength by 5 points.",
     "statistic": ["intelligence"],
@@ -111,7 +111,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Poison Potion": {
+  "poison-potion": {
     "name": "Poison Potion - need to add the poison -true status",
     "description": "Poison Potion that will decrease enemy hit points by 5.",
     "statistic": ["current_hp"],
@@ -119,7 +119,7 @@
     "purchase_price": 400,
     "sale_price": 300
   },
-  "Slow Potion": {
+  "slow-potion": {
     "name": "Slow Potion",
     "description": "Poison Potion that will decrease enemy speed by -5.",
     "statistic": ["speed"],
@@ -127,7 +127,5 @@
     "purchase_price": 400,
     "sale_price": 300
   }
-
-
 }
 
