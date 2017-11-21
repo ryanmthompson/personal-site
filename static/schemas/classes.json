@@ -19,7 +19,7 @@
     "spirit_mod": 1,
     "intelligence_mod":1
   },
-  "apprentice": {
+  "Paladin": {
     "skills": {},
     "max_hp_mod": 300,
     "max_mp_mod": 20,
@@ -29,7 +29,7 @@
     "spirit_mod": 1,
     "intelligence_mod":1
   },
-  "wizard": {
+  "Dark Knight": {
     "skills": {},
     "max_hp_mod": 300,
     "max_mp_mod": 20,
@@ -39,7 +39,187 @@
     "spirit_mod": 1,
     "intelligence_mod":1
   },
-  "engineer": {
+  "Apprentice": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "White Mage": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Black Mage": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Green Mage": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Arch Mage": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Novice": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Engineer": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Thief": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Pirate": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Fighter": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Monk": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Dragoon": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Ninja": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Samurai": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Alpha Knight": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Alpha Mage": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Alpha Technique": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Alpha Practitioner": {
+    "skills": {},
+    "max_hp_mod": 300,
+    "max_mp_mod": 20,
+    "strength_mod": 1,
+    "speed_mod": 1,
+    "agility_mod": 1,
+    "spirit_mod": 1,
+    "intelligence_mod":1
+  },
+  "Omega": {
     "skills": {},
     "max_hp_mod": 300,
     "max_mp_mod": 20,
